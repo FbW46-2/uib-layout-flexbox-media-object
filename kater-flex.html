@@ -12,42 +12,44 @@
             padding: 0;
         }
 
-        img {
-            width: 150px;
-            border-radius: 5px;
-            
-        }
-
-        .container {
+        .media {
             max-width: 600px;
             background-color: lightblue;
             border: 4px solid rgb(0, 140, 255);
-            border-radius: 20px;
+            border-radius: 25px;
             margin: 15px;
-            padding: 25px;
+            padding: 35px;
             display: flex;
             /* align-content: space-between; */
             justify-content: space-between;
 
             
         }
-
-        .container > div {
+        .media img {
+            width: 150px;
+            border-radius: 5px;
+            
+        }
+        /*giving the space inbetween headings and text   */
+        .media h2, h3 {
+            margin-bottom: 10px;
+        }
+        .media > div {
             margin-right: 10px;
             
         }
 
-        .container_blue {
+        .container_img-top {
             align-items: flex-start;
             
         }
 
-        .container_pink {
+        .container_img-middle {
             align-items: center;
             background-color: pink;
         }
 
-        .container_green {
+        .container_img-reverse-end {
             flex-direction: row-reverse;
             align-items: flex-end;
             background-color: lightgreen;
@@ -57,7 +59,7 @@
     </style>
 </head>
 <body>
-    <div class="container container_blue">
+    <div class="media container_img-top">
         <div><img src="employee.jpg" alt="cat showing his toung">
         </div>
         <div>
@@ -68,7 +70,7 @@
         </div>
     </div>
 
-    <div class="container container_pink">
+    <div class="media container_img-middle">
         <div><img src="employee.jpg" alt="cat showing his toung">
         </div>
         <div>
@@ -79,7 +81,7 @@
         </div>
     </div>
 
-    <div class="container container_green">
+    <div class="media container_img-reverse-end">
         <div><img src="employee.jpg" alt="cat showing his toung">
         </div>
         <div>
@@ -89,7 +91,5 @@
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat nisi, eos quos mollitia veniam ea voluptatem eum? Rerum mollitia dolor sed veniam quibusdam, nulla impedit, sint cum quo ab perferendis. Incidunt saepe commodi hic ratione adipisci, error dignissimos recusandae repellat in vero molestias assumenda eius explicabo nemo nihil perspiciatis voluptatibus?</p>
         </div>
     </div>
-   
-    
 </body>
 </html>
