@@ -36,3 +36,7 @@ img {
   align-items: flex-end;
   padding-left: 10px;
 }
+
+.sec-03 {
+  flex-direction: row-reverse;
+}
